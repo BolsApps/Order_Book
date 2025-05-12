@@ -18,6 +18,6 @@ import { OrderBookService } from '../../../core/services/order-book.service';
   `
 })
 export class ReplayControlsComponent {
-  @Input() playing!: boolean; // Tutaj definiujemy właściwość 'playing' jako Input
+  @Input() playing!: boolean;
   @Output() togglePlay = new EventEmitter<void>();
 }

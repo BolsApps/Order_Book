@@ -31,7 +31,6 @@ export class DepthChartComponent implements OnChanges {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
-    // Sortowanie i kumulacja danych
     const sortedBids = [...this.snapshot.bids].sort((a, b) => b.price - a.price);
     const sortedAsks = [...this.snapshot.asks].sort((a, b) => a.price - b.price);
 
