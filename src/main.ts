@@ -1,6 +1,11 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { OrderBookComponent } from './app/features/order-book/order-book.component';
+import { OrderBookModule } from './app/features/order-book/order-book.module';
 
-bootstrapApplication(AppComponent, appConfig)
+//bootstrapApplication(AppComponent, appConfig)
+//  .catch((err) => console.error(err));
+
+bootstrapApplication(OrderBookComponent, appConfig) // Użyj OrderBookComponent zamiast AppComponent
   .catch((err) => console.error(err));
+
